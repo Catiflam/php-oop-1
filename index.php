@@ -1,18 +1,18 @@
 <?php
 
-// require __DIR__ . './Modules/Product.php';
+require __DIR__ . './Modules/Product.php';
+require __DIR__ . './Modules/Movie.php';
+require __DIR__ . './Modules/Serie.php';
 
-// $product = new Product();
-// $movie = new Movie("Batman", "super-hero","xvxzvxz",);
-// $serie_tv = new SerieTV();
-// // $product_1 = new Movie("Batman", "super-hero");
-// // $product_2 = new Movie("Mission-impossible","action");
+$product = new Product('titolo','category','sony');
+$movie = new Movie('titolo','category','studios',2001, 120);
+$serie_tv = new SerieTV('titolo','category', 1989, 2003,'episodi 200','stagioni 6');
 
-// // $product = [
-// //   $product_1,
-// //   $product_2,
-// // ];
+echo '<h1>Production<h1/>';
+echo '<p>'. $product->getDetails(). '<p/>';
 
-// var_dump($product);
-// var_dump($movie);
-// var_dump($serie_tv);
+echo '<hr/><h1>Movie<h1/>';
+echo '<p>'. $movie->getDetails(). '<p/>';
+
+echo '<hr/><h1>Serie<h1/>';
+echo '<p>'. $serie_tv->getDetails(). '<p/>';
