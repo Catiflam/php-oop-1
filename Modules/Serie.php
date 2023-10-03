@@ -24,7 +24,13 @@ class SerieTv extends Product{
    }
 
    public function getDetails(){
-    return "$this->title, $this->category, $this->aired_from_year, $this->aired_to_year,$this->number_of_episodes, $this->number_of_seasons";
+    return 
+    "<strong>Titolo:<strong/>$this->title,<br> 
+    <strong>Categoria:<strong/>$this->category,<br> 
+    <strong>Anno d'uscita,Primo episodio:<strong/>$this->aired_from_year,<br> 
+    <strong>Anno d'uscita,Ultimo episodio:<strong/>$this->aired_to_year,<br>
+    <strong>Episodi:<strong/>$this->number_of_episodes,<br>
+    <strong>Stagioni:<strong/>$this->number_of_seasons";
   }
 
 };

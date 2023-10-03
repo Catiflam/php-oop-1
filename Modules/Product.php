@@ -25,6 +25,9 @@ class Product{
   }
 
   public function getDetails(){
-    return "$this->title, $this->category, $this->productor";
+    return 
+    "Titolo:$this->title,<br>
+     Categoria:$this->category,<br> 
+     Produttore:$this->productor";
   }
 };

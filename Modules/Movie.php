@@ -21,7 +21,12 @@ class Movie extends Product{
   $this->running_time = $running_time;
 } 
 public function getDetails(){
-  return "$this->title, $this->category, $this->productor, $this->published_year, $this->running_time";
+  return 
+  "<strong>Titolo:<strong/>$this->title,<br>
+   <strong>Categoria:<strong/>$this->category,<br> 
+   <strong>Produttore:<strong/>$this->productor,<br> 
+   <strong>Anno d'uscita:<strong/>$this->published_year,<br>
+   <strong>Durata:<strong/> $this->running_time";
 }
 
 };
